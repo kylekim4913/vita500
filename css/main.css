@@ -1,0 +1,361 @@
+@import url("common.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+.head {
+  position: relative;
+}
+
+.head .logo {
+  position: fixed;
+  left: 4%;
+  top: 4%;
+  width: 160px;
+  height: 32px;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.head .nav1 {
+  position: fixed;
+  right: 4%;
+  top: 4%;
+}
+
+.head .nav1 .txt_menu {
+  display: inline-block;
+  -webkit-transform: translateY(-300%);
+          transform: translateY(-300%);
+}
+
+.head .nav1 .txt_menu span {
+  color: #fff;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  padding: 0 25px 0 25px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-right: 100px;
+}
+
+.head .nav1 .txt_menu.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  margin: 0;
+  padding: 0;
+}
+
+.head .nav1 .b_menu {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+.head .nav1 .brgrbtn {
+  padding: 0;
+  margin-left: 60px;
+  position: absolute;
+  right: 0;
+}
+
+.head .nav1 .brgrbtn span:nth-of-type(1) {
+  content: '';
+  width: 20px;
+  display: block;
+  border-bottom: 2px solid #fff;
+  margin-top: 14px;
+}
+
+.head .nav1 .brgrbtn span:nth-of-type(2) {
+  content: '';
+  width: 20px;
+  display: block;
+  border-bottom: 2px solid #fff;
+  margin-top: 5px;
+}
+
+.head .nav1 .brgrbtn span:nth-of-type(3) {
+  content: '';
+  width: 20px;
+  display: block;
+  border-bottom: 2px solid #fff;
+  margin-top: 5px;
+}
+
+.head .nav1 .brgrbtn.open span:nth-of-type(1) {
+  position: relative;
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.head .nav1 .brgrbtn.open span:nth-of-type(2) {
+  display: none;
+}
+
+.head .nav1 .brgrbtn.open span:nth-of-type(3) {
+  position: relative;
+  top: -2px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.head .aside_left {
+  position: fixed;
+  top: 10%;
+  left: 4%;
+}
+
+.head .aside_left .line {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  border-left: 2px solid #888888;
+  height: 460px;
+}
+
+.head .aside_left .numtxt {
+  position: absolute;
+  top: 290px;
+  left: -55px;
+  z-index: 2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 110px;
+  height: 110px;
+  background-color: white;
+}
+
+.head .aside_right {
+  position: absolute;
+  top: 400px;
+  right: 5%;
+}
+
+.head .aside_right .circle {
+  border-radius: 100%;
+  border: 1px solid #fff;
+  width: 12px;
+  height: 12px;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.head .aside_right .circle.active {
+  background-color: #fff;
+}
+
+.head .sns {
+  position: fixed;
+  bottom: 8%;
+  right: 12%;
+}
+
+.head .sns div {
+  display: inline-block;
+  margin: 0 16px;
+  width: 30px;
+  height: 30px;
+}
+
+.head .sns div:nth-of-type(1) {
+  background: url(../imgs/sns.png) no-repeat;
+  background-size: cover;
+  background-position-y: 1px;
+}
+
+.head .sns div:nth-of-type(2) {
+  background: url(../imgs/sns.png) no-repeat;
+  background-position-x: -63px;
+  background-position-y: 1px;
+}
+
+.head .sns div:nth-of-type(3) {
+  background: url(../imgs/sns.png) no-repeat;
+  background-position-x: -120px;
+  background-position-y: 1px;
+}
+
+.m_cont {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.m_cont .m_left {
+  display: inline-block;
+  width: 30%;
+}
+
+.m_cont .m_left .s_img {
+  position: absolute;
+  left: 16%;
+  width: 22vw;
+  height: 100vh;
+  background: url(../imgs/img-vita.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  -webkit-animation: c_in 1s linear;
+          animation: c_in 1s linear;
+}
+
+@-webkit-keyframes c_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes c_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.m_cont .m_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  background: #ffc000;
+}
+
+.m_cont .m_right .s_txt {
+  -webkit-animation: d_in 1s linear;
+          animation: d_in 1s linear;
+}
+
+.m_cont .m_right .s_txt h2 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1.1em;
+  text-shadow: 2px 2px 5px #ff9600;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.m_cont .m_right .s_txt p {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.m_cont .m_right .s_txt a {
+  color: white;
+  text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+@-webkit-keyframes d_in {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes d_in {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.pop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pop .p_cont {
+  position: relative;
+}
+
+.pop .p_cont .out {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.pop .p_cont .out span {
+  width: 20px;
+  display: block;
+  border-bottom: 2px solid #fff;
+  margin-top: 14px;
+}
+
+.pop .p_cont .out span:nth-of-type(1) {
+  position: relative;
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.pop .p_cont .out span:nth-of-type(2) {
+  position: relative;
+  top: -11px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.pop .p_cont .p_img {
+  margin-top: 50px;
+  width: 800px;
+  height: 554px;
+  background: url(../imgs/img-popup.jpg);
+}
+
+.pop.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */
